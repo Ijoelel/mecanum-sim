@@ -1,0 +1,4 @@
+Invoking command in '/home/ijoel/ros2_ws/build/mecanum_controller': /usr/bin/cmake /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ijoel/ros2_ws/install/mecanum_controller
+Invoked command in '/home/ijoel/ros2_ws/build/mecanum_controller' returned '0': /usr/bin/cmake /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ijoel/ros2_ws/install/mecanum_controller
+Invoking command in '/home/ijoel/ros2_ws/build/mecanum_controller': /usr/bin/cmake --build /home/ijoel/ros2_ws/build/mecanum_controller -- -j12 -l12
+Invoked command in '/home/ijoel/ros2_ws/build/mecanum_controller' returned '2': /usr/bin/cmake --build /home/ijoel/ros2_ws/build/mecanum_controller -- -j12 -l12

@@ -1,0 +1,72 @@
+[0.007s] Invoking command in '/home/ijoel/ros2_ws/build/mecanum_controller': /usr/bin/cmake /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ijoel/ros2_ws/install/mecanum_controller
+[0.053s] -- The C compiler identification is GNU 11.4.0
+[0.106s] -- The CXX compiler identification is GNU 11.4.0
+[0.108s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.175s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.175s] -- Detecting C compile features
+[0.175s] -- Detecting C compile features - done
+[0.178s] -- Detecting CXX compiler ABI info
+[0.250s] -- Detecting CXX compiler ABI info - done
+[0.255s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.255s] -- Detecting CXX compile features
+[0.255s] -- Detecting CXX compile features - done
+[0.258s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.546s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.662s] -- Found controller_interface: 2.54.3 (/opt/ros/humble/share/controller_interface/cmake)
+[0.846s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.892s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.942s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.024s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.112s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.810s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.813s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.951s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.063s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.092s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.106s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.117s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.125s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.136s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.250s] -- Looking for pthread.h
+[2.572s] -- Looking for pthread.h - found
+[2.573s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.671s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.672s] -- Found Threads: TRUE  
+[2.934s] -- Configuring done
+[2.945s] -- Generating done
+[2.946s] CMake Warning:
+[2.946s]   Manually-specified variables were not used by the project:
+[2.946s] 
+[2.946s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[2.946s]     CATKIN_SYMLINK_INSTALL
+[2.946s] 
+[2.946s] 
+[2.948s] -- Build files have been written to: /home/ijoel/ros2_ws/build/mecanum_controller
+[2.958s] Invoked command in '/home/ijoel/ros2_ws/build/mecanum_controller' returned '0': /usr/bin/cmake /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ijoel/ros2_ws/install/mecanum_controller
+[2.959s] Invoking command in '/home/ijoel/ros2_ws/build/mecanum_controller': /usr/bin/cmake --build /home/ijoel/ros2_ws/build/mecanum_controller -- -j12 -l12
+[3.008s] [ 50%] Building CXX object CMakeFiles/mecanum_effort_controller.dir/src/mecanum_effort_controller.cpp.o
+[8.883s] /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp: In member function ‘virtual controller_interface::CallbackReturn mecanum_controller::MecanumEffortController::on_init()’:
+[8.883s] /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:56:30: error: ‘class rclcpp::Logger’ has no member named ‘error’
+[8.883s]    56 |     get_node()->get_logger().error("wheel_radius must be positive");
+[8.883s]       |                              ^~~~~
+[8.883s] /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:60:30: error: ‘class rclcpp::Logger’ has no member named ‘error’
+[8.883s]    60 |     get_node()->get_logger().error(
+[8.883s]       |                              ^~~~~
+[8.891s] /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:72:28: error: ‘class rclcpp::Logger’ has no member named ‘info’
+[8.891s]    72 |   get_node()->get_logger().info(
+[8.891s]       |                            ^~~~
+[8.895s] /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp: In member function ‘virtual controller_interface::CallbackReturn mecanum_controller::MecanumEffortController::on_activate(const rclcpp_lifecycle::State&)’:
+[8.895s] /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:129:32: error: ‘class rclcpp::Logger’ has no member named ‘error’
+[8.895s]   129 |       get_node()->get_logger().error(
+[8.895s]       |                                ^~~~~
+[8.895s] /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:143:32: error: ‘class rclcpp::Logger’ has no member named ‘error’
+[8.896s]   143 |       get_node()->get_logger().error(
+[8.896s]       |                                ^~~~~
+[8.896s] /home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:154:28: error: ‘class rclcpp::Logger’ has no member named ‘info’
+[8.896s]   154 |   get_node()->get_logger().info("MecanumEffortController activated");
+[8.896s]       |                            ^~~~
+[11.111s] gmake[2]: *** [CMakeFiles/mecanum_effort_controller.dir/build.make:76: CMakeFiles/mecanum_effort_controller.dir/src/mecanum_effort_controller.cpp.o] Error 1
+[11.111s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mecanum_effort_controller.dir/all] Error 2
+[11.112s] gmake: *** [Makefile:146: all] Error 2
+[11.114s] Invoked command in '/home/ijoel/ros2_ws/build/mecanum_controller' returned '2': /usr/bin/cmake --build /home/ijoel/ros2_ws/build/mecanum_controller -- -j12 -l12

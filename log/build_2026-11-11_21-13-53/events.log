@@ -1,0 +1,272 @@
+[0.000000] (-) TimerEvent: {}
+[0.000179] (-) JobUnselected: {'identifier': 'mecanum_ros2'}
+[0.000597] (mecanum) JobQueued: {'identifier': 'mecanum', 'dependencies': OrderedDict()}
+[0.000642] (mecanum_controller) JobQueued: {'identifier': 'mecanum_controller', 'dependencies': OrderedDict()}
+[0.000673] (mecanum) JobStarted: {'identifier': 'mecanum'}
+[0.005057] (mecanum_controller) JobStarted: {'identifier': 'mecanum_controller'}
+[0.008806] (mecanum) JobProgress: {'identifier': 'mecanum', 'progress': 'cmake'}
+[0.009219] (mecanum) JobProgress: {'identifier': 'mecanum', 'progress': 'build'}
+[0.009686] (mecanum) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ijoel/ros2_ws/build/mecanum', '--', '-j12', '-l12'], 'cwd': '/home/ijoel/ros2_ws/build/mecanum', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', '127.0.0.1,localhost,::1'), ('AI_AGENT', 'opencode'), ('OPENCODE_SESSION_ID', 'ses_e37919ab3ffeh8SW9gIrL112Eb'), ('USER', 'ijoel'), ('LC_TIME', 'id_ID.UTF-8'), ('AGENT', '1'), ('XDG_SESSION_TYPE', 'x11'), ('BUN_INSTALL', '/home/ijoel/.bun'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ijoel'), ('OLDPWD', '/home/ijoel/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', '127.0.0.1,localhost,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '3177'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ijoel/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ijoel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('OPENCODE_TERMINAL', '1'), ('USERNAME', 'ijoel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OPENCODE', '1'), ('PATH', '/opt/ros/humble/bin:/home/ijoel/.bun/bin:/home/ijoel/.opencode/bin:/home/ijoel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ijoel-icra:@/tmp/.ICE-unix/3146,unix/ijoel-icra:/tmp/.ICE-unix/3146'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS', 'true'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/007332fe_90de_479b_bfce_cfbd4007c1e6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ijoel/ros2_ws/install/mecanum:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ijoel/ros2_ws/build/mecanum'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ijoel/ros2_ws/install/mecanum:/opt/ros/humble')]), 'shell': False}
+[0.011069] (mecanum_controller) JobProgress: {'identifier': 'mecanum_controller', 'progress': 'cmake'}
+[0.011275] (mecanum_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/ijoel/ros2_ws/install/mecanum_controller'], 'cwd': '/home/ijoel/ros2_ws/build/mecanum_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', '127.0.0.1,localhost,::1'), ('AI_AGENT', 'opencode'), ('OPENCODE_SESSION_ID', 'ses_e37919ab3ffeh8SW9gIrL112Eb'), ('USER', 'ijoel'), ('LC_TIME', 'id_ID.UTF-8'), ('AGENT', '1'), ('XDG_SESSION_TYPE', 'x11'), ('BUN_INSTALL', '/home/ijoel/.bun'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ijoel'), ('OLDPWD', '/home/ijoel/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', '127.0.0.1,localhost,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '3177'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ijoel/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ijoel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('OPENCODE_TERMINAL', '1'), ('USERNAME', 'ijoel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OPENCODE', '1'), ('PATH', '/opt/ros/humble/bin:/home/ijoel/.bun/bin:/home/ijoel/.opencode/bin:/home/ijoel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ijoel-icra:@/tmp/.ICE-unix/3146,unix/ijoel-icra:/tmp/.ICE-unix/3146'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS', 'true'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/007332fe_90de_479b_bfce_cfbd4007c1e6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ijoel/ros2_ws/install/mecanum:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ijoel/ros2_ws/build/mecanum_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ijoel/ros2_ws/install/mecanum')]), 'shell': False}
+[0.044584] (mecanum) CommandEnded: {'returncode': 0}
+[0.045105] (mecanum) JobProgress: {'identifier': 'mecanum', 'progress': 'install'}
+[0.052894] (mecanum) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ijoel/ros2_ws/build/mecanum'], 'cwd': '/home/ijoel/ros2_ws/build/mecanum', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', '127.0.0.1,localhost,::1'), ('AI_AGENT', 'opencode'), ('OPENCODE_SESSION_ID', 'ses_e37919ab3ffeh8SW9gIrL112Eb'), ('USER', 'ijoel'), ('LC_TIME', 'id_ID.UTF-8'), ('AGENT', '1'), ('XDG_SESSION_TYPE', 'x11'), ('BUN_INSTALL', '/home/ijoel/.bun'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ijoel'), ('OLDPWD', '/home/ijoel/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', '127.0.0.1,localhost,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '3177'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ijoel/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ijoel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('OPENCODE_TERMINAL', '1'), ('USERNAME', 'ijoel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OPENCODE', '1'), ('PATH', '/opt/ros/humble/bin:/home/ijoel/.bun/bin:/home/ijoel/.opencode/bin:/home/ijoel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ijoel-icra:@/tmp/.ICE-unix/3146,unix/ijoel-icra:/tmp/.ICE-unix/3146'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS', 'true'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/007332fe_90de_479b_bfce_cfbd4007c1e6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ijoel/ros2_ws/install/mecanum:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ijoel/ros2_ws/build/mecanum'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ijoel/ros2_ws/install/mecanum:/opt/ros/humble')]), 'shell': False}
+[0.058719] (mecanum_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.060053] (mecanum) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.060411] (mecanum) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.060707] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/config/controllers.yaml\n'}
+[0.060903] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/config/gmapping_params.bak.yaml\n'}
+[0.060964] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/config/joint_velocity_controller.bak.yaml\n'}
+[0.061176] (mecanum) StdoutLine: {'line': b'-- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/__pycache__/sim_effort_test.launch.cpython-310.pyc\n'}
+[0.069295] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/__pycache__/sim_gdb.launch.cpython-310.pyc\n'}
+[0.069467] (mecanum) StdoutLine: {'line': b'-- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/__pycache__/sim_no_spawner.launch.cpython-310.pyc\n'}
+[0.077755] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/amcl.launch\n'}
+[0.077962] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/control.launch\n'}
+[0.078102] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/display.launch\n'}
+[0.078224] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/gazebo.launch\n'}
+[0.078372] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/include/description.launch.xml\n'}
+[0.078583] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/main.launch\n'}
+[0.078771] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/mapping.launch\n'}
+[0.078900] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/mecanum_ctrl.launch\n'}
+[0.079048] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/move_base.launch\n'}
+[0.079111] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/navigation_mecanum.launch\n'}
+[0.079211] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/send_cmd_vel.launch\n'}
+[0.079300] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/sim.launch.py\n'}
+[0.079368] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/world_editor.launch\n'}
+[0.079669] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/base.STL\n'}
+[0.079776] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/encoder.stl\n'}
+[0.079872] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/lds.stl\n'}
+[0.080008] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s1.STL\n'}
+[0.080070] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s2.STL\n'}
+[0.080181] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s3.STL\n'}
+[0.080237] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s4.STL\n'}
+[0.080375] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s5.STL\n'}
+[0.080493] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s6.STL\n'}
+[0.080554] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s7.STL\n'}
+[0.080688] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s8.STL\n'}
+[0.080747] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s9.STL\n'}
+[0.080838] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/leftwheel.STL\n'}
+[0.080936] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s10.STL\n'}
+[0.081102] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s2.STL\n'}
+[0.081202] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s3.STL\n'}
+[0.081260] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s4.STL\n'}
+[0.081371] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s5.STL\n'}
+[0.081469] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s6.STL\n'}
+[0.081561] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s7.STL\n'}
+[0.081650] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s8.STL\n'}
+[0.081756] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s9.STL\n'}
+[0.081860] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/rightwheel.STL\n'}
+[0.081942] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/roller.stl\n'}
+[0.082055] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/base.xacro\n'}
+[0.082164] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/encoder_rim.xacro\n'}
+[0.082267] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/encoder_roller.xacro\n'}
+[0.082426] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/left_rim.xacro\n'}
+[0.082527] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/mecanum.urdf\n'}
+[0.082583] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/right_rim.xacro\n'}
+[0.082711] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/worlds/Maze.world\n'}
+[0.082839] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/worlds/arena.world\n'}
+[0.082991] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/rviz/mapping.rviz\n'}
+[0.083106] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/rviz/navigation.rviz\n'}
+[0.083252] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/lib/mecanum/mecanum_ctrl_ros2.py\n'}
+[0.083425] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/ament_index/resource_index/package_run_dependencies/mecanum\n'}
+[0.083584] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/ament_index/resource_index/parent_prefix_path/mecanum\n'}
+[0.083725] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/environment/ament_prefix_path.sh\n'}
+[0.083868] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/environment/ament_prefix_path.dsv\n'}
+[0.084018] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/environment/path.sh\n'}
+[0.084150] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/environment/path.dsv\n'}
+[0.084286] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/local_setup.bash\n'}
+[0.084433] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/local_setup.sh\n'}
+[0.084564] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/local_setup.zsh\n'}
+[0.084693] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/local_setup.dsv\n'}
+[0.084801] (mecanum) StdoutLine: {'line': b'-- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/package.dsv\n'}
+[0.093735] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/ament_index/resource_index/packages/mecanum\n'}
+[0.093958] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/cmake/mecanumConfig.cmake\n'}
+[0.094111] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/cmake/mecanumConfig-version.cmake\n'}
+[0.094381] (mecanum) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/package.xml\n'}
+[0.095960] (mecanum) CommandEnded: {'returncode': 0}
+[0.099785] (-) TimerEvent: {}
+[0.110597] (mecanum) JobEnded: {'identifier': 'mecanum', 'rc': 0}
+[0.111022] (mecanum_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.112996] (mecanum_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.175127] (mecanum_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.180275] (mecanum_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.180465] (mecanum_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.180671] (mecanum_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.182976] (mecanum_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199873] (-) TimerEvent: {}
+[0.255026] (mecanum_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.260343] (mecanum_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.260544] (mecanum_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.260884] (mecanum_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.263132] (mecanum_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299957] (-) TimerEvent: {}
+[0.400109] (-) TimerEvent: {}
+[0.500267] (-) TimerEvent: {}
+[0.550929] (mecanum_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600363] (-) TimerEvent: {}
+[0.667276] (mecanum_controller) StdoutLine: {'line': b'-- Found controller_interface: 2.54.3 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[0.700451] (-) TimerEvent: {}
+[0.800603] (-) TimerEvent: {}
+[0.851720] (mecanum_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.897605] (mecanum_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.900682] (-) TimerEvent: {}
+[0.947189] (mecanum_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.000776] (-) TimerEvent: {}
+[1.028942] (mecanum_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.100873] (-) TimerEvent: {}
+[1.117028] (mecanum_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.200970] (-) TimerEvent: {}
+[1.301165] (-) TimerEvent: {}
+[1.401372] (-) TimerEvent: {}
+[1.501566] (-) TimerEvent: {}
+[1.601750] (-) TimerEvent: {}
+[1.701904] (-) TimerEvent: {}
+[1.802092] (-) TimerEvent: {}
+[1.814882] (mecanum_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.818356] (mecanum_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.902186] (-) TimerEvent: {}
+[1.956219] (mecanum_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.002272] (-) TimerEvent: {}
+[2.067844] (mecanum_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.097305] (mecanum_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.102366] (-) TimerEvent: {}
+[2.110911] (mecanum_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.122348] (mecanum_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.130625] (mecanum_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.141189] (mecanum_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.202460] (-) TimerEvent: {}
+[2.255075] (mecanum_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.302589] (-) TimerEvent: {}
+[2.402778] (-) TimerEvent: {}
+[2.502936] (-) TimerEvent: {}
+[2.577697] (mecanum_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.577970] (mecanum_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.603041] (-) TimerEvent: {}
+[2.676467] (mecanum_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.677654] (mecanum_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.703123] (-) TimerEvent: {}
+[2.803293] (-) TimerEvent: {}
+[2.903467] (-) TimerEvent: {}
+[2.939514] (mecanum_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.950022] (mecanum_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[2.951018] (mecanum_controller) StderrLine: {'line': b'CMake Warning:\n'}
+[2.951168] (mecanum_controller) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[2.951258] (mecanum_controller) StderrLine: {'line': b'\n'}
+[2.951357] (mecanum_controller) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[2.951446] (mecanum_controller) StderrLine: {'line': b'    CATKIN_SYMLINK_INSTALL\n'}
+[2.951525] (mecanum_controller) StderrLine: {'line': b'\n'}
+[2.951599] (mecanum_controller) StderrLine: {'line': b'\n'}
+[2.953815] (mecanum_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/ijoel/ros2_ws/build/mecanum_controller\n'}
+[2.963298] (mecanum_controller) CommandEnded: {'returncode': 0}
+[2.964071] (mecanum_controller) JobProgress: {'identifier': 'mecanum_controller', 'progress': 'build'}
+[2.964101] (mecanum_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ijoel/ros2_ws/build/mecanum_controller', '--', '-j12', '-l12'], 'cwd': '/home/ijoel/ros2_ws/build/mecanum_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', '127.0.0.1,localhost,::1'), ('AI_AGENT', 'opencode'), ('OPENCODE_SESSION_ID', 'ses_e37919ab3ffeh8SW9gIrL112Eb'), ('USER', 'ijoel'), ('LC_TIME', 'id_ID.UTF-8'), ('AGENT', '1'), ('XDG_SESSION_TYPE', 'x11'), ('BUN_INSTALL', '/home/ijoel/.bun'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ijoel'), ('OLDPWD', '/home/ijoel/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', '127.0.0.1,localhost,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '3177'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ijoel/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ijoel'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('OPENCODE_TERMINAL', '1'), ('USERNAME', 'ijoel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OPENCODE', '1'), ('PATH', '/opt/ros/humble/bin:/home/ijoel/.bun/bin:/home/ijoel/.opencode/bin:/home/ijoel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ijoel-icra:@/tmp/.ICE-unix/3146,unix/ijoel-icra:/tmp/.ICE-unix/3146'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS', 'true'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/007332fe_90de_479b_bfce_cfbd4007c1e6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ijoel/ros2_ws/install/mecanum:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ijoel/ros2_ws/build/mecanum_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ijoel/ros2_ws/install/mecanum')]), 'shell': False}
+[3.003566] (-) TimerEvent: {}
+[3.013162] (mecanum_controller) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/mecanum_effort_controller.dir/src/mecanum_effort_controller.cpp.o\n'}
+[3.103694] (-) TimerEvent: {}
+[3.203909] (-) TimerEvent: {}
+[3.304090] (-) TimerEvent: {}
+[3.404282] (-) TimerEvent: {}
+[3.504486] (-) TimerEvent: {}
+[3.604709] (-) TimerEvent: {}
+[3.704927] (-) TimerEvent: {}
+[3.805143] (-) TimerEvent: {}
+[3.905335] (-) TimerEvent: {}
+[4.005517] (-) TimerEvent: {}
+[4.105694] (-) TimerEvent: {}
+[4.205865] (-) TimerEvent: {}
+[4.306021] (-) TimerEvent: {}
+[4.406226] (-) TimerEvent: {}
+[4.506482] (-) TimerEvent: {}
+[4.606665] (-) TimerEvent: {}
+[4.706848] (-) TimerEvent: {}
+[4.807024] (-) TimerEvent: {}
+[4.907195] (-) TimerEvent: {}
+[5.007379] (-) TimerEvent: {}
+[5.107541] (-) TimerEvent: {}
+[5.207708] (-) TimerEvent: {}
+[5.307907] (-) TimerEvent: {}
+[5.408081] (-) TimerEvent: {}
+[5.508240] (-) TimerEvent: {}
+[5.608369] (-) TimerEvent: {}
+[5.708520] (-) TimerEvent: {}
+[5.808701] (-) TimerEvent: {}
+[5.908869] (-) TimerEvent: {}
+[6.009030] (-) TimerEvent: {}
+[6.109199] (-) TimerEvent: {}
+[6.209367] (-) TimerEvent: {}
+[6.309525] (-) TimerEvent: {}
+[6.409681] (-) TimerEvent: {}
+[6.509840] (-) TimerEvent: {}
+[6.609998] (-) TimerEvent: {}
+[6.710169] (-) TimerEvent: {}
+[6.810358] (-) TimerEvent: {}
+[6.910520] (-) TimerEvent: {}
+[7.010678] (-) TimerEvent: {}
+[7.110845] (-) TimerEvent: {}
+[7.211002] (-) TimerEvent: {}
+[7.311178] (-) TimerEvent: {}
+[7.411389] (-) TimerEvent: {}
+[7.511562] (-) TimerEvent: {}
+[7.611759] (-) TimerEvent: {}
+[7.711942] (-) TimerEvent: {}
+[7.812112] (-) TimerEvent: {}
+[7.912337] (-) TimerEvent: {}
+[8.012520] (-) TimerEvent: {}
+[8.112696] (-) TimerEvent: {}
+[8.212883] (-) TimerEvent: {}
+[8.313066] (-) TimerEvent: {}
+[8.413242] (-) TimerEvent: {}
+[8.513429] (-) TimerEvent: {}
+[8.613609] (-) TimerEvent: {}
+[8.713784] (-) TimerEvent: {}
+[8.813949] (-) TimerEvent: {}
+[8.887776] (mecanum_controller) StderrLine: {'line': b'/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp: In member function \xe2\x80\x98virtual controller_interface::CallbackReturn mecanum_controller::MecanumEffortController::on_init()\xe2\x80\x99:\n'}
+[8.888040] (mecanum_controller) StderrLine: {'line': b'/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:56:30: error: \xe2\x80\x98class rclcpp::Logger\xe2\x80\x99 has no member named \xe2\x80\x98error\xe2\x80\x99\n'}
+[8.888191] (mecanum_controller) StderrLine: {'line': b'   56 |     get_node()->get_logger().error("wheel_radius must be positive");\n'}
+[8.888325] (mecanum_controller) StderrLine: {'line': b'      |                              ^~~~~\n'}
+[8.888425] (mecanum_controller) StderrLine: {'line': b'/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:60:30: error: \xe2\x80\x98class rclcpp::Logger\xe2\x80\x99 has no member named \xe2\x80\x98error\xe2\x80\x99\n'}
+[8.888486] (mecanum_controller) StderrLine: {'line': b'   60 |     get_node()->get_logger().error(\n'}
+[8.888528] (mecanum_controller) StderrLine: {'line': b'      |                              ^~~~~\n'}
+[8.896456] (mecanum_controller) StderrLine: {'line': b'/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:72:28: error: \xe2\x80\x98class rclcpp::Logger\xe2\x80\x99 has no member named \xe2\x80\x98info\xe2\x80\x99\n'}
+[8.896593] (mecanum_controller) StderrLine: {'line': b'   72 |   get_node()->get_logger().info(\n'}
+[8.896641] (mecanum_controller) StderrLine: {'line': b'      |                            ^~~~\n'}
+[8.900146] (mecanum_controller) StderrLine: {'line': b'/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp: In member function \xe2\x80\x98virtual controller_interface::CallbackReturn mecanum_controller::MecanumEffortController::on_activate(const rclcpp_lifecycle::State&)\xe2\x80\x99:\n'}
+[8.900289] (mecanum_controller) StderrLine: {'line': b'/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:129:32: error: \xe2\x80\x98class rclcpp::Logger\xe2\x80\x99 has no member named \xe2\x80\x98error\xe2\x80\x99\n'}
+[8.900352] (mecanum_controller) StderrLine: {'line': b'  129 |       get_node()->get_logger().error(\n'}
+[8.900492] (mecanum_controller) StderrLine: {'line': b'      |                                ^~~~~\n'}
+[8.900736] (mecanum_controller) StderrLine: {'line': b'/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:143:32: error: \xe2\x80\x98class rclcpp::Logger\xe2\x80\x99 has no member named \xe2\x80\x98error\xe2\x80\x99\n'}
+[8.900847] (mecanum_controller) StderrLine: {'line': b'  143 |       get_node()->get_logger().error(\n'}
+[8.901060] (mecanum_controller) StderrLine: {'line': b'      |                                ^~~~~\n'}
+[8.901163] (mecanum_controller) StderrLine: {'line': b'/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:154:28: error: \xe2\x80\x98class rclcpp::Logger\xe2\x80\x99 has no member named \xe2\x80\x98info\xe2\x80\x99\n'}
+[8.901267] (mecanum_controller) StderrLine: {'line': b'  154 |   get_node()->get_logger().info("MecanumEffortController activated");\n'}
+[8.901399] (mecanum_controller) StderrLine: {'line': b'      |                            ^~~~\n'}
+[8.914033] (-) TimerEvent: {}
+[9.014202] (-) TimerEvent: {}
+[9.114372] (-) TimerEvent: {}
+[9.214555] (-) TimerEvent: {}
+[9.314750] (-) TimerEvent: {}
+[9.414954] (-) TimerEvent: {}
+[9.515166] (-) TimerEvent: {}
+[9.615365] (-) TimerEvent: {}
+[9.715547] (-) TimerEvent: {}
+[9.815738] (-) TimerEvent: {}
+[9.915914] (-) TimerEvent: {}
+[10.016100] (-) TimerEvent: {}
+[10.116289] (-) TimerEvent: {}
+[10.216490] (-) TimerEvent: {}
+[10.316675] (-) TimerEvent: {}
+[10.416888] (-) TimerEvent: {}
+[10.517077] (-) TimerEvent: {}
+[10.617272] (-) TimerEvent: {}
+[10.717485] (-) TimerEvent: {}
+[10.817673] (-) TimerEvent: {}
+[10.917847] (-) TimerEvent: {}
+[11.017984] (-) TimerEvent: {}
+[11.116305] (mecanum_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mecanum_effort_controller.dir/build.make:76: CMakeFiles/mecanum_effort_controller.dir/src/mecanum_effort_controller.cpp.o] Error 1\n'}
+[11.116560] (mecanum_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mecanum_effort_controller.dir/all] Error 2\n'}
+[11.116909] (mecanum_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.118051] (-) TimerEvent: {}
+[11.118866] (mecanum_controller) CommandEnded: {'returncode': 2}
+[11.128057] (mecanum_controller) JobEnded: {'identifier': 'mecanum_controller', 'rc': 2}
+[11.138442] (-) EventReactorShutdown: {}

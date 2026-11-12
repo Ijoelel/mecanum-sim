@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mecanum">
+	<xacro:include filename="$(find mecanum_ros2)/urdf/left_rim.xacro"/>
+  <xacro:include filename="$(find mecanum_ros2)/urdf/right_rim.xacro"/>
+  <xacro:include filename="$(find mecanum_ros2)/urdf/encoder_rim.xacro"/>
+
+	<material name="dark">
+    	<color rgba="0.3 0.3 0.3 1.0"/>
+  </material>
+	<xacro:arg name="_kp"   default="1e5"/>
+  <xacro:arg name="_kd"   default="1e5"/>
+  <xacro:arg name="_maxVel"   default="40"/>
+  <xacro:arg name="_fdir1_left"   default="1 1 0"/>
+  <xacro:arg name="_fdir1_right"   default="1 -1 0"/>
+  <xacro:arg name="_mu1"   default="1.0"/>
+  <xacro:arg name="_mu2"   default="1.0"/>
+
+
+	<link name="base_footprint"/>
+	<link name="base_link">
+	<inertial>
+      <origin
+        xyz="3.8106E-17 5.5042E-17 -0.0052377"
+        rpy="0 0 0" />
+      <mass
+        value="4.9166" />
+      <inertia
+        ixx="0.082486"
+        ixy="5.0994E-06"
+        ixz="1.5081E-20"
+        iyy="0.078984"
+        iyz="1.3553E-19"
+        izz="0.16031" />
+    </inertial>
+	<visual>
+		<geometry>
+			<mesh filename="file://$(find mecanum_ros2)/meshes/base.STL" scale="1 1 1.2" />
+			<!-- <mesh filename="file://$(find mecanum_ros2)/meshes/base.STL" /> -->
+
+		</geometry>
+		<material name="base_material">
+			<color rgba="1 1 1 1"/>
+		</material>
+	</visual>
+	<collision>
+		<geometry>
+			<mesh filename="file://$(find mecanum_ros2)/meshes/base.STL" scale="1 1 1.2" />
+			<!-- <mesh filename="file://$(find mecanum_ros2)/meshes/base.STL"/> -->
+
+		</geometry>
+	</collision>
+	</link>
+
+	<joint name="base_joint" type="fixed">
+		<parent link="base_footprint" />
+		<child link="base_link" />
+		<origin xyz="0 0 0.104" rpy="-1.57079632679 0 0"/>
+	</joint>
+
+	<xacro:left_rim_macro
+    name="one"
+    color="0.3 0 0"
+    xyz="0.2 0.056 -0.236"
+    rpy="1.57 0 0"
+  />
+  <xacro:right_rim_macro
+    name="two"
+    color="0 0.3 0"
+    xyz="-0.2 0.056 -0.34"
+    rpy="-1.57 0 0"
+  />
+  <xacro:left_rim_macro
+    name="three"
+    color="0 0 0.3"
+    xyz="-0.2 0.056 0.236"
+    rpy="-1.57 0 0"
+  />
+  <xacro:right_rim_macro
+    name="four"
+    color="0 0 0.3"
+    xyz="0.2 0.056 0.34"
+    rpy="1.57 0 0" 
+  />
+
+
+	<gazebo reference="base_link">
+  	<material>Gazebo/White</material>
+  </gazebo>
+
+	<gazebo reference="left_rim_one_link">
+    <material>Gazebo/Red</material>
+    <!-- <mu1>0.3</mu1>
+  	<mu2>0.3</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd> -->
+  	<!-- <selfCollide>true</selfCollide> -->
+  </gazebo>
+
+	<gazebo reference="right_rim_two_link">
+    <material>Gazebo/Green</material>
+    <!-- <mu1>0.3</mu1>
+  	<mu2>0.3</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd> -->
+  	<!-- <selfCollide>true</selfCollide> -->
+  </gazebo>
+
+	<gazebo reference="left_rim_three_link">
+    <material>Gazebo/Blue</material>
+    <!-- <mu1>0.3</mu1>
+  	<mu2>0.3</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd> -->
+  	<!-- <selfCollide>true</selfCollide> -->
+  </gazebo>
+
+  <gazebo reference="right_rim_four_link">
+  	<material>Gazebo/Orange</material>
+    <!-- <mu1>0.3</mu1>
+  	<mu2>0.3</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd> -->
+  	<!-- <selfCollide>true</selfCollide> -->
+  </gazebo>
+	
+	<joint name="imu_joint" type="fixed">
+  	<parent link="base_footprint"/>
+  	<child link="imu_link"/>
+  	<origin xyz="0 0 0.26325" rpy="0 0 0"/>
+  </joint>
+
+  <link name="imu_link"/>
+
+  <joint name="scan_joint" type="fixed">
+  	<parent link="base_footprint"/>
+  	<child link="base_scan"/>
+  	<origin xyz="0 0 0.15" rpy="0 0 0"/>
+  </joint>
+
+  <link name="base_scan">
+    <visual>
+      <origin xyz="0 0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find mecanum_ros2)/meshes/lds.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="dark"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.0315" radius="0.055"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.114" />
+      <origin xyz="0 0 0" />
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0"
+               iyy="0.001" iyz="0.0"
+               izz="0.001" />
+    </inertial>
+  </link>
+
+  <!-- defining imu and laser in gazebo -->
+  <gazebo reference="imu_link">
+	<sensor name="imu_sensor" type="imu">
+		<always_on>true</always_on>
+		<visualize>false</visualize>
+		<update_rate>100</update_rate>
+		<topic>/imu</topic>
+		<frame_id>imu_link</frame_id>
+	</sensor>
+	<material>Gazebo/FlatBlack</material>
+  </gazebo>
+
+  <gazebo reference="base_scan">
+	  <sensor name="lds_lfcd_sensor" type="gpu_lidar">
+		<pose>0 0 0 0 0 0</pose>
+		<always_on>true</always_on>
+		<visualize>false</visualize>
+		<update_rate>50</update_rate>
+		<frame_id>base_scan</frame_id>
+		<lidar>
+		  <scan>
+		    <horizontal>
+		      <samples>360</samples>
+		      <resolution>1</resolution>
+		      <min_angle>0.0</min_angle>
+		      <max_angle>6.28319</max_angle>
+		    </horizontal>
+		  </scan>
+		  <range>
+		    <min>0.120</min>
+		    <max>10.0</max>
+		    <resolution>0.015</resolution>
+		  </range>
+		  <noise>
+		    <type>gaussian</type>
+		    <mean>0.0</mean>
+		    <stddev>0.01</stddev>
+		  </noise>
+		</lidar>
+	  </sensor>
+	</gazebo>
+
+  <!-- holonomic encoder setup -->
+  <xacro:encoder_macro
+    name="one"
+    color="0.3 0 0"
+    xyz="0.04 0.08 0"
+    rpy="0 -1.570796327 0"/>
+  <xacro:encoder_macro
+    name="two"
+    color="0 0.3 0"
+    xyz="-0.02 0.08 0.034641016"
+    rpy="0 2.617993878 0"/>
+  <xacro:encoder_macro
+    name="three"
+    color="0 0 0.3"
+    xyz="-0.02 0.08 -0.03464101615"
+    rpy="0 0.523598776 0"/>
+
+  <gazebo reference="encoder_one_link">
+  	<material>Gazebo/Red</material>
+    <mu1>$(arg _mu1)</mu1>
+  	<mu2>$(arg _mu2)</mu2>
+  </gazebo>
+
+  <gazebo reference="encoder_two_link">
+  	<material>Gazebo/Green</material>
+    <mu1>$(arg _mu1)</mu1>
+  	<mu2>$(arg _mu2)</mu2>
+  </gazebo>
+
+  <gazebo reference="encoder_three_link">
+  	<material>Gazebo/Blue</material>
+    <mu1>$(arg _mu1)</mu1>
+  	<mu2>$(arg _mu2)</mu2>
+  </gazebo>
+  <ros2_control name="GazeboSimSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
+    <joint name="left_rim_one_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_rim_two_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="left_rim_three_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_rim_four_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="encoder_one_joint">
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="encoder_two_joint">
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="encoder_three_joint">
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="slider_one_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.02</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="slider_two_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.02</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="slider_three_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.02</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <gazebo>
+    <plugin filename="gz_ros2_control-system"
+            name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <robot_param>robot_description</robot_param>
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <parameters>$(find mecanum_ros2)/config/controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+</robot>

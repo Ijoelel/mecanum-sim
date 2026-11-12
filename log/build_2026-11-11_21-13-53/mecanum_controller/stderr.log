@@ -1,0 +1,30 @@
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+
+/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp: In member function ‘virtual controller_interface::CallbackReturn mecanum_controller::MecanumEffortController::on_init()’:
+/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:56:30: error: ‘class rclcpp::Logger’ has no member named ‘error’
+   56 |     get_node()->get_logger().error("wheel_radius must be positive");
+      |                              ^~~~~
+/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:60:30: error: ‘class rclcpp::Logger’ has no member named ‘error’
+   60 |     get_node()->get_logger().error(
+      |                              ^~~~~
+/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:72:28: error: ‘class rclcpp::Logger’ has no member named ‘info’
+   72 |   get_node()->get_logger().info(
+      |                            ^~~~
+/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp: In member function ‘virtual controller_interface::CallbackReturn mecanum_controller::MecanumEffortController::on_activate(const rclcpp_lifecycle::State&)’:
+/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:129:32: error: ‘class rclcpp::Logger’ has no member named ‘error’
+  129 |       get_node()->get_logger().error(
+      |                                ^~~~~
+/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:143:32: error: ‘class rclcpp::Logger’ has no member named ‘error’
+  143 |       get_node()->get_logger().error(
+      |                                ^~~~~
+/home/ijoel/ros2_ws/src/mecanum_drive/mecanum_controller/src/mecanum_effort_controller.cpp:154:28: error: ‘class rclcpp::Logger’ has no member named ‘info’
+  154 |   get_node()->get_logger().info("MecanumEffortController activated");
+      |                            ^~~~
+gmake[2]: *** [CMakeFiles/mecanum_effort_controller.dir/build.make:76: CMakeFiles/mecanum_effort_controller.dir/src/mecanum_effort_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mecanum_effort_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

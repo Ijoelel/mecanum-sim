@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>mecanum_controller</name>
+  <version>0.1.0</version>
+  <description>
+    Effort-based PD controller for the mecanum drive robot: drives the four rim
+    wheels from /cmd_vel (holonomic kinematics) and holds the three encoder-wheel
+    sliders at their target position. All actuation uses effort (torque) command
+    interfaces, which keeps the Gazebo Sim LCP problem small.
+  </description>
+  <maintainer email="ijoel@example.com">ijoel</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>controller_interface</depend>
+  <depend>geometry_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>std_msgs</depend>
+
+  <export>
+    <controller_interface plugin="${prefix}/mecanum_controller_plugins.xml"/>
+  </export>
+</package>

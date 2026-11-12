@@ -1,0 +1,92 @@
+[0.008s] Invoking command in '/home/ijoel/ros2_ws/build/mecanum': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ijoel/ros2_ws/src/mecanum_drive/mecanum -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ijoel/ros2_ws/install/mecanum
+[0.055s] -- The C compiler identification is GNU 11.4.0
+[0.100s] -- The CXX compiler identification is GNU 11.4.0
+[0.106s] -- Detecting C compiler ABI info
+[0.164s] -- Detecting C compiler ABI info - done
+[0.168s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.168s] -- Detecting C compile features
+[0.169s] -- Detecting C compile features - done
+[0.171s] -- Detecting CXX compiler ABI info
+[0.241s] -- Detecting CXX compiler ABI info - done
+[0.245s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.246s] -- Detecting CXX compile features
+[0.246s] -- Detecting CXX compile features - done
+[0.248s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.507s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.553s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.641s] -- Configuring done
+[0.643s] -- Generating done
+[0.644s] -- Build files have been written to: /home/ijoel/ros2_ws/build/mecanum
+[0.648s] Invoked command in '/home/ijoel/ros2_ws/build/mecanum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ijoel/ros2_ws/src/mecanum_drive/mecanum -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ijoel/ros2_ws/install/mecanum
+[0.649s] Invoking command in '/home/ijoel/ros2_ws/build/mecanum': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ijoel/ros2_ws/build/mecanum -- -j12 -l12
+[0.682s] Invoked command in '/home/ijoel/ros2_ws/build/mecanum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ijoel/ros2_ws/build/mecanum -- -j12 -l12
+[0.691s] Invoking command in '/home/ijoel/ros2_ws/build/mecanum': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ijoel/ros2_ws/build/mecanum
+[0.696s] -- Install configuration: ""
+[0.696s] -- Execute custom install script
+[0.697s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/config/controllers.yaml
+[0.705s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/config/gmapping_params.bak.yaml
+[0.712s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/config/joint_velocity_controller.bak.yaml
+[0.720s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/amcl.launch
+[0.728s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/control.launch
+[0.736s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/display.launch
+[0.743s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/gazebo.launch
+[0.750s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/include/description.launch.xml
+[0.758s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/main.launch
+[0.765s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/mapping.launch
+[0.773s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/mecanum_ctrl.launch
+[0.781s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/move_base.launch
+[0.789s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/navigation_mecanum.launch
+[0.797s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/send_cmd_vel.launch
+[0.805s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/sim.launch.py
+[0.814s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/launch/world_editor.launch
+[0.822s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/base.STL
+[0.831s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/encoder.stl
+[0.839s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/lds.stl
+[0.848s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s1.STL
+[0.855s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s2.STL
+[0.863s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s3.STL
+[0.870s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s4.STL
+[0.877s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s5.STL
+[0.885s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s6.STL
+[0.893s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s7.STL
+[0.900s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s8.STL
+[0.909s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/left/s9.STL
+[0.917s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/leftwheel.STL
+[0.924s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s10.STL
+[0.931s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s2.STL
+[0.940s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s3.STL
+[0.948s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s4.STL
+[0.955s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s5.STL
+[0.963s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s6.STL
+[0.972s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s7.STL
+[0.980s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s8.STL
+[0.987s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/right/s9.STL
+[0.994s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/rightwheel.STL
+[1.002s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/meshes/roller.stl
+[1.010s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/base.xacro
+[1.017s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/encoder_rim.xacro
+[1.024s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/encoder_roller.xacro
+[1.031s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/left_rim.xacro
+[1.039s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/mecanum.urdf
+[1.047s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/urdf/right_rim.xacro
+[1.054s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/worlds/Maze.world
+[1.062s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/worlds/arena.world
+[1.069s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/rviz/mapping.rviz
+[1.077s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/rviz/navigation.rviz
+[1.085s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/lib/mecanum/mecanum_ctrl_ros2.py
+[1.094s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/ament_index/resource_index/package_run_dependencies/mecanum
+[1.101s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/ament_index/resource_index/parent_prefix_path/mecanum
+[1.109s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/environment/ament_prefix_path.sh
+[1.118s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/environment/ament_prefix_path.dsv
+[1.126s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/environment/path.sh
+[1.134s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/environment/path.dsv
+[1.142s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/local_setup.bash
+[1.149s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/local_setup.sh
+[1.158s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/local_setup.zsh
+[1.165s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/local_setup.dsv
+[1.173s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/package.dsv
+[1.181s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/ament_index/resource_index/packages/mecanum
+[1.188s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/cmake/mecanumConfig.cmake
+[1.195s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/cmake/mecanumConfig-version.cmake
+[1.203s] -- Symlinking: /home/ijoel/ros2_ws/install/mecanum/share/mecanum/package.xml
+[1.212s] Invoked command in '/home/ijoel/ros2_ws/build/mecanum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ijoel/ros2_ws/build/mecanum
